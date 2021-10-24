@@ -122,6 +122,9 @@ switch ($modx->event->name) {
         break;
     case 'OnTVInputRenderList':
         $modx->event->output($corePath . 'elements/tv/input/');
+        break;    
+    case 'OnTVInputPropertiesList':
+        $modx->event->output($corePath . 'elements/tv/input/options/');
         break;
     default:
         return;
